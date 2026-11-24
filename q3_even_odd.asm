@@ -3,6 +3,7 @@
 ; Section: 1
 ; Question: Q3 even odd
 
+
 LXI H, 2500H
 MOV C, M
 MVI D, 00H
