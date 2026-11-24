@@ -1,0 +1,23 @@
+; Name: Marwan Hafez Mohamed
+; Student ID: 2025000971
+; Section: 1
+; Question: Q3 even odd
+
+LXI H, 2500H
+MOV C, M
+MVI D, 00H
+MVI E, 00H
+LOOP: INX H
+MOV A, M
+ANI 01H
+JZ ISEVEN
+INR E
+JMP NEXT
+ISEVEN: INR D
+NEXT: DCR C
+JNZ LOOP
+MOV A, D
+STA 2600H
+MOV A, E
+STA 2601H
+HLT
